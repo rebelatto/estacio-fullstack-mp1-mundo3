@@ -34,10 +34,10 @@ public class PessoaFisica extends Pessoa{
         return idade;
     }
     
-     public void exibir(int id, String nome, String cpf, int idade){
-        System.out.println("Id: " + id);
-        System.out.println("Nome: " + nome);
-        System.out.println("CPF: " + cpf);
-        System.out.println("Idade: " + idade);
+     public void exibir(){
+        System.out.println("Id: " + getId());
+        System.out.println("Nome: " + getNome());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("Idade: " + getIdade());
     }
 }

@@ -24,9 +24,9 @@ public class PessoaJuridica extends Pessoa{
         return cnpj;
     }
     
-     public void exibir(int id, String nome, String cnpj){
-        System.out.println("Id: " + id);
-        System.out.println("Nome: " + nome);
-        System.out.println("CNPJ: " + cnpj);
+     public void exibir(){
+        System.out.println("Id: " + getId());
+        System.out.println("Nome: " + getNome());
+        System.out.println("CNPJ: " + getCnpj());
     }
 }
