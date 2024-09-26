@@ -4,8 +4,9 @@
  */
 package cadastropoo;
 
-import model.PessoaFisica;
-import model.PessoaJuridica;
+/*import model.PessoaFisica;
+import model.PessoaJuridica;*/
+import controler.Menu;
 /**
  *
  * @author rebelatto
@@ -18,13 +19,15 @@ public class CadastroPOO {
      */
     public static void main(String[] args) {
        
-        // Pessoa p = new Pessoa( 01, "Jonison");
-        // p.exibir(p.getId(),p.getNome());
-     
+       
+     /*
         PessoaFisica pf = new PessoaFisica(1, "Jonison Rebelatto", "111.111.111-111" ,35);
         pf.exibir(pf.getId(), pf.getNome(), pf.getCpf(), pf.getIdade());
         
         PessoaJuridica pj = new PessoaJuridica(1, "Foxmit", "11.111.111/0001-11");
         pj.exibir(pj.getId(), pj.getNome(), pj.getCnpj());
+     */
+     Menu menu = new Menu();
+     menu.exibirMenu();
     }   
 }

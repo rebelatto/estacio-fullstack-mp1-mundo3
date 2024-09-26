@@ -3,11 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
-
+import model.Pessoa;
 /**
  *
  * @author rebelatto
  */
-public class PessoaJuridicaRepo {
+public class PessoaJuridicaRepo{
     
 }

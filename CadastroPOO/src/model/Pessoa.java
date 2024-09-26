@@ -3,12 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
+import java.io.Serializable;
 
 /**
  *
  * @author rebelatto
  */
-public class Pessoa {
+public class Pessoa implements Serializable {
     protected int id;
     protected String nome;
 
