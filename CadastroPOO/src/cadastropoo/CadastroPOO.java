@@ -21,10 +21,10 @@ public class CadastroPOO {
         // Pessoa p = new Pessoa( 01, "Jonison");
         // p.exibir(p.getId(),p.getNome());
      
-        PessoaFisica pf = new PessoaFisica(01, "Jonison Rebelatto", "111.111.111-111" , 35);
+        PessoaFisica pf = new PessoaFisica(1, "Jonison Rebelatto", "111.111.111-111" ,35);
         pf.exibir(pf.getId(), pf.getNome(), pf.getCpf(), pf.getIdade());
         
-        PessoaJuridica pj = new PessoaJuridica(01, "Foxmit", "11.111.111/0001-11");
+        PessoaJuridica pj = new PessoaJuridica(1, "Foxmit", "11.111.111/0001-11");
         pj.exibir(pj.getId(), pj.getNome(), pj.getCnpj());
     }   
 }

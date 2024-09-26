@@ -9,8 +9,8 @@ package model;
  * @author rebelatto
  */
 public class PessoaFisica extends Pessoa{
-    public String cpf; 
-    public int idade;
+    private String cpf; 
+    private int idade;
 
     public PessoaFisica(int id, String nome, String cpf, int idade){
         super(id, nome);

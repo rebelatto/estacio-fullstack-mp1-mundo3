@@ -1,5 +1,5 @@
-.class
-.properties
-.xml
-.iml
+*.class
+*.properties
+*.xml
+*.iml
 .idea/

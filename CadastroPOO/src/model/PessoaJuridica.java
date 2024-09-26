@@ -9,7 +9,7 @@ package model;
  * @author rebelatto
  */
 public class PessoaJuridica extends Pessoa{
-    public String cnpj;
+    private String cnpj;
      
     public PessoaJuridica(int id, String nome, String cnpj){
         super(id, nome);

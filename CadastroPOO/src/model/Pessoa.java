@@ -9,8 +9,8 @@ package model;
  * @author rebelatto
  */
 public class Pessoa {
-    private int id;
-    private String nome;
+    protected int id;
+    protected String nome;
 
     public Pessoa(int id, String nome){
         this.id = id;
@@ -33,7 +33,7 @@ public class Pessoa {
        return nome;
     }
     
-    public void exibir(int id, String nome){
+    protected void exibir(int id, String nome){
         System.out.println("Id: " + id);
         System.out.println("Nome: " + nome);
     }
