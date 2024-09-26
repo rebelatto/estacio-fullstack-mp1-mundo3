@@ -47,49 +47,64 @@ public class Menu {
 
     private void executarAcao(int opcao) {
         switch (opcao) {
-            case 1:
+            case 1 -> {
+                String op;
+                System.out.println("===== Incluir  pessoa =====");
                 System.out.println("");
-                System.out.println("Você escolheu a Opção 1");
+                System.out.println("F - Pessoa Física | J - Pessoa ");
+                System.out.println("");
+                System.out.print("Escolha uma opção: ");
+                op = scanner.next();
+                if (op.equalsIgnoreCase("F")) {
+                    System.out.println("Cadastrando PF");
+                } else {
+                    if (op.equalsIgnoreCase("J")){
+                        System.out.println("Cadastrando PJ");
+                        
+                    } else {
+                        System.out.println("Opção inválida.");
+                    }
+                }
                 // Lógica para Opção 1
-                break;
-            case 2:
+            }
+            case 2 -> {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 2");
                 // Lógica para Opção 2
-                break;
-            case 3:
+            }
+            case 3 -> {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 3");
                 // Lógica para Opção 2
-                break;
-            case 4:
+            }
+            case 4 -> {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 2");
                 // Lógica para Opção 2
-                break;
-            case 5:
+            }
+            case 5 -> {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 2");
                 // Lógica para Opção 2
-                break;
-            case 6:
+            }
+            case 6 -> {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 2");
                 // Lógica para Opção 2
-                break;
-            case 7:
+            }
+            case 7 -> {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 2");
                 // Lógica para Opção 2
-                break;
-            case 0:
+            }
+            case 0 -> {
                 System.out.println("");
                 System.out.println("Encerrando a Execução do Programa...");
-                break;
-            default:
+            }
+            default -> {
                 System.out.println("");
                 System.out.println("Opção inválida, tente novamente.");
-                break;
+            }
         }
     }
 }

@@ -1,5 +1,24 @@
+# Ignorar classes compiladas
 *.class
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de configuração
 *.properties
 *.xml
+
+# Ignorar diretórios e arquivos do NetBeans
+nbproject/private/
+build/
+dist/
+
+# Ignorar arquivos e diretórios gerados
+.DS_Store
 *.iml
+*.ipr
+*.iws
+
+# Ignorar arquivos de controle de versão
 .idea/
+.vscode/

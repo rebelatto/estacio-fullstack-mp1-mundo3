@@ -4,8 +4,9 @@
  */
 package cadastropoo;
 
-/*import model.PessoaFisica;
-import model.PessoaJuridica;*/
+import model.PessoaFisica;
+import model.PessoaJuridica;
+import model.PessoaFisicaRepo;
 import controler.Menu;
 /**
  *
@@ -19,15 +20,26 @@ public class CadastroPOO {
      */
     public static void main(String[] args) {
        
+       PessoaFisica pf1 = new PessoaFisica(1, "Jonison Rebelatto", "111.111.111-111", 35);
+       PessoaFisica pf2 = new PessoaFisica(2, "Elaine Germina", "111.111.111-111", 37);
        
-     /*
-        PessoaFisica pf = new PessoaFisica(1, "Jonison Rebelatto", "111.111.111-111" ,35);
-        pf.exibir(pf.getId(), pf.getNome(), pf.getCpf(), pf.getIdade());
+       pf1.exibir();
+       pf2.exibir();
         
-        PessoaJuridica pj = new PessoaJuridica(1, "Foxmit", "11.111.111/0001-11");
-        pj.exibir(pj.getId(), pj.getNome(), pj.getCnpj());
-     */
-     Menu menu = new Menu();
-     menu.exibirMenu();
+       PessoaJuridica pj1 = new PessoaJuridica(1, "Foxmit", "11.111.111/0001-11");
+       PessoaJuridica pj2 = new PessoaJuridica(2, "Be King", "11.111.111/0001-11");
+       
+       pj1.exibir();
+       pj2.exibir();
+       
+       
+       PessoaFisicaRepo repo = new PessoaFisicaRepo();
+       
+       repo.inserir(pf1);
+       repo.inserir(pf2);
+       
+       
+       Menu menu = new Menu();
+       menu.exibirMenu();
     }   
 }
