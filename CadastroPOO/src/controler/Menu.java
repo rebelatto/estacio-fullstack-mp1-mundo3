@@ -47,7 +47,7 @@ public class Menu {
 
     private void executarAcao(int opcao) {
         switch (opcao) {
-            case 1 -> {
+            case 1:
                 String op;
                 System.out.println("===== Incluir  pessoa =====");
                 System.out.println("");
@@ -55,9 +55,11 @@ public class Menu {
                 System.out.println("");
                 System.out.print("Escolha uma opção: ");
                 op = scanner.next();
-                if (op.equalsIgnoreCase("F")) {
+                
+                if(op.equalsIgnoreCase("F")){
                     System.out.println("Cadastrando PF");
-                } else {
+                   
+                }else{
                     if (op.equalsIgnoreCase("J")){
                         System.out.println("Cadastrando PJ");
                         
@@ -65,8 +67,9 @@ public class Menu {
                         System.out.println("Opção inválida.");
                     }
                 }
+               
                 // Lógica para Opção 1
-            }
+            
             case 2 -> {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 2");
