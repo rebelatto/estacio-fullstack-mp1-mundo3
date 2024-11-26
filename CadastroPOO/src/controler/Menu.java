@@ -64,11 +64,11 @@ public class Menu {
                         System.out.println("Cadastrando PJ");
                         
                     } else {
-                        System.out.println("Opção inválida.");
+                        System.out.println("Opção inválida. Tente novamente");
                     }
                 }
                
-                // Lógica para Opção 1
+                break;
             
             case 2 : {
                 System.out.println("");
