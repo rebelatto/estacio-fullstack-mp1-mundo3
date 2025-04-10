@@ -1,21 +1,22 @@
 package model;
 import java.util.ArrayList;
 import java.io.*;
+import java.util.List;
 
 /**
  *
  * @author Jonison Rebelatto
  */
 
-public class PessoaFisicaRepo  extends PessoaFisica implements Serializable{
-    private ArrayList<PessoaFisica> pessoasFisicas;
-   
+public class PessoaFisicaRepo  implements Serializable{
+    private List<PessoaFisica> pessoaFisica;
+
    public PessoaFisicaRepo(){
-       this.pessoasFisicas = new ArrayList<PessoaFisica>();
+       this.pessoaFisica = new ArrayList<PessoaFisica>();
    }
    
    public void inserir(PessoaFisica pessoaFisica) {
-        pessoasFisicas.add(pessoaFisica);
+        pessoaFisica.add(pessoaFisica);
         System.out.println("Pessoa física inserida: " + pessoaFisica.getNome());
    }
 
