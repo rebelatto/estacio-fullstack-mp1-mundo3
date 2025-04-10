@@ -78,27 +78,27 @@ public class Menu {
             case 3 : {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 3");
-                // Lógica para Opção 2
+                // Lógica para Opção 3
             }
             case 4 : {
                 System.out.println("");
-                System.out.println("Você escolheu a Opção 2");
-                // Lógica para Opção 2
+                System.out.println("Você escolheu a Opção 4");
+                // Lógica para Opção 4
             }
             case 5 : {
                 System.out.println("");
-                System.out.println("Você escolheu a Opção 2");
-                // Lógica para Opção 2
+                System.out.println("Você escolheu a Opção 5");
+                // Lógica para Opção 5
             }
             case 6 : {
                 System.out.println("");
-                System.out.println("Você escolheu a Opção 2");
-                // Lógica para Opção 2
+                System.out.println("Você escolheu a Opção 6");
+                // Lógica para Opção 6
             }
             case 7 : {
                 System.out.println("");
-                System.out.println("Você escolheu a Opção 2");
-                // Lógica para Opção 2
+                System.out.println("Você escolheu a Opção 7");
+                // Lógica para Opção 7
             }
             case 0 : {
                 System.out.println("");

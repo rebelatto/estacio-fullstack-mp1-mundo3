@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package cadastropoo;
 
 import model.PessoaFisica;
@@ -10,7 +6,7 @@ import model.PessoaFisicaRepo;
 import controler.Menu;
 /**
  *
- * @author rebelatto
+ * @author Jonison Rebelatto
  */
 
 public class CadastroPOO {

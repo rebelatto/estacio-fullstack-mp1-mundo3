@@ -1,15 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 import java.io.Serializable;
 
 /**
  *
- * @author rebelatto
+ * @author Jonison Rebelatto
  */
-public class Pessoa implements Serializable {
+public abstract class Pessoa implements Serializable {
+    private static final long serialVersionUID = 1L;
     protected int id;
     protected String nome;
 
@@ -17,26 +14,26 @@ public class Pessoa implements Serializable {
         this.id = id;
         this.nome = nome;
     }
-    
-    public void setId (int id){
-        this.id = id;
-    }
-    
+
     public int getId(){
         return id;
     }
-    
-    public void setNome (String nome){
-         this.nome = nome;
+
+    public void setId (int id){
+        this.id = id;
     }
-    
+
     public String getNome(){
        return nome;
     }
-    
+
+    public void setNome (String nome){
+        this.nome = nome;
+    }
+
     protected void exibir(int id, String nome){
         System.out.println("Id: " + id);
         System.out.println("Nome: " + nome);
     }
- 
+
 }

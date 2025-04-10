@@ -1,14 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
 /**
  *
- * @author rebelatto
+ * @author Jonison Rebelatto
  */
 public class PessoaFisica extends Pessoa{
+    private static final long serialVersionUID = 1L;
+
     private String cpf; 
     private int idade;
 
@@ -17,26 +15,25 @@ public class PessoaFisica extends Pessoa{
         this.cpf = cpf;
         this.idade = idade;
     }
-    
-    public void setCpf(String cpf){
-        this.cpf = cpf;
-    }
-    
+
     public String getCpf(){
         return cpf;
     }
-    
-    public void setIdade(int idade){
-        this.idade = idade;
+
+    public void setCpf(String cpf){
+        this.cpf = cpf;
     }
-    
+
     public int getIdade(){
         return idade;
     }
-    
-     public void exibir(){
-        System.out.println("Id: " + getId());
-        System.out.println("Nome: " + getNome());
+
+    public void setIdade(int idade){
+        this.idade = idade;
+    }
+
+    public void exibir(){
+        super.exibir(id,nome);
         System.out.println("CPF: " + getCpf());
         System.out.println("Idade: " + getIdade());
     }

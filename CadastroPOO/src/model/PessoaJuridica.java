@@ -1,32 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
 /**
  *
- * @author rebelatto
+ * @author Jonison Rebelatto
  */
 public class PessoaJuridica extends Pessoa{
+    private static final long serialVersionUID = 1L;
+
     private String cnpj;
      
     public PessoaJuridica(int id, String nome, String cnpj){
         super(id, nome);
         this.cnpj = cnpj;
     }
-    
+
+    public String getCnpj(){
+        return cnpj;
+    }
+
     public void setCnpj(String cnpj){
         this.cnpj = cnpj;
     }
     
-    public String getCnpj(){
-        return cnpj;
-    }
-    
      public void exibir(){
-        System.out.println("Id: " + getId());
-        System.out.println("Nome: " + getNome());
+        super.exibir(id, nome);
         System.out.println("CNPJ: " + getCnpj());
     }
 }

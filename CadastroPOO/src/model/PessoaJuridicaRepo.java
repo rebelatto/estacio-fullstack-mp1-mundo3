@@ -6,7 +6,7 @@ package model;
 import model.Pessoa;
 /**
  *
- * @author rebelatto
+ * @author Jonison Rebelatto
  */
 public class PessoaJuridicaRepo{
     
