@@ -1,41 +1,43 @@
 package cadastropoo;
 
-import model.PessoaFisica;
-import model.PessoaJuridica;
-import model.PessoaFisicaRepo;
+import model.*;
+import view.*;
 
-/**
- *
- * @author Jonison Rebelatto
- */
 
 public class CadastroPOO {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-       
-       PessoaFisica pf1 = new PessoaFisica(1, "Jonison Rebelatto", "111.111.111-111", 35);
-       PessoaFisica pf2 = new PessoaFisica(2, "Elaine Germina", "111.111.111-111", 37);
-       
-       pf1.exibir();
-       pf2.exibir();
-        
-       PessoaJuridica pj1 = new PessoaJuridica(1, "Foxmit", "11.111.111/0001-11");
-       PessoaJuridica pj2 = new PessoaJuridica(2, "Be King", "11.111.111/0001-11");
-       
-       pj1.exibir();
-       pj2.exibir();
-       
-       
-       PessoaFisicaRepo repo = new PessoaFisicaRepo();
-       
-       repo.inserir(pf1);
-       repo.inserir(pf2);
-       
-       
-//       Menu menu = new Menu();
-//       menu.exibirMenu();
+
+    //Pratica 1
+       try {
+          PessoaFisicaRepo repo1 = new PessoaFisicaRepo();
+          repo1.inserir(new PessoaFisica(1, "Ana", "11111111111", 25));
+          repo1.inserir(new PessoaFisica(2, "Carlos", "22222222222", 52));
+          repo1.persistir("pf_repo.dat");
+
+          PessoaFisicaRepo repo2 = new PessoaFisicaRepo();
+          repo2.recuperar("pf_repo.dat");
+          for (PessoaFisica pf : repo2.obterTodos()) {
+             pf.exibir();
+          }
+
+          PessoaJuridicaRepo repo3 = new PessoaJuridicaRepo();
+          repo3.inserir(new PessoaJuridica(3, "XPTO Sales", "33333333333333"));
+          repo3.inserir(new PessoaJuridica(4, "XPTO Solutions", "44444444444444"));
+          repo3.persistir("pj_repo.dat");
+
+          PessoaJuridicaRepo repo4 = new PessoaJuridicaRepo();
+          repo4.recuperar("pj_repo.dat");
+          for (PessoaJuridica pj : repo4.obterTodos()) {
+             pj.exibir();
+          }
+
+       } catch (Exception e) {
+          e.printStackTrace();
+       }
+
+       //Pratica 2
+       Menu menu = new Menu();
+       menu.exibirMenu();
     }   
 }
