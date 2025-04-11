@@ -1,9 +1,5 @@
 package model;
 
-/**
- *
- * @author Jonison Rebelatto
- */
 public class PessoaJuridica extends Pessoa{
     private static final long serialVersionUID = 1L;
 

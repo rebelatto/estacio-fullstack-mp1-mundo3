@@ -1,11 +1,7 @@
 package model;
 import java.io.Serializable;
 
-/**
- *
- * @author Jonison Rebelatto
- */
-public abstract class Pessoa implements Serializable {
+public class Pessoa implements Serializable {
     private static final long serialVersionUID = 1L;
     protected int id;
     protected String nome;
