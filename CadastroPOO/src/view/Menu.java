@@ -1,4 +1,4 @@
-package controler;
+package view;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -74,16 +74,22 @@ public class Menu {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 2");
                 // Lógica para Opção 2
+                opcao = -1;
+                break;
             }
             case 3 : {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 3");
                 // Lógica para Opção 3
+                opcao = -1;
+                break;
             }
             case 4 : {
                 System.out.println("");
                 System.out.println("Você escolheu a Opção 4");
                 // Lógica para Opção 4
+                opcao = -1;
+                break;
             }
             case 5 : {
                 System.out.println("");

@@ -9,14 +9,10 @@ import java.util.List;
  */
 
 public class PessoaFisicaRepo  implements Serializable{
-    private List<PessoaFisica> pessoaFisica;
-
-   public PessoaFisicaRepo(){
-       this.pessoaFisica = new ArrayList<PessoaFisica>();
-   }
+    private ArrayList<PessoaFisica> pessoas = new ArrayList<>();
    
    public void inserir(PessoaFisica pessoaFisica) {
-        pessoaFisica.add(pessoaFisica);
+        pessoas.add(pessoaFisica);
         System.out.println("Pessoa física inserida: " + pessoaFisica.getNome());
    }
 

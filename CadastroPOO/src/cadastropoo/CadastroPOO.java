@@ -3,7 +3,7 @@ package cadastropoo;
 import model.PessoaFisica;
 import model.PessoaJuridica;
 import model.PessoaFisicaRepo;
-import controler.Menu;
+
 /**
  *
  * @author Jonison Rebelatto
@@ -35,7 +35,7 @@ public class CadastroPOO {
        repo.inserir(pf2);
        
        
-       Menu menu = new Menu();
-       menu.exibirMenu();
+//       Menu menu = new Menu();
+//       menu.exibirMenu();
     }   
 }
